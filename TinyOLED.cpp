@@ -1,8 +1,12 @@
 /*
-    TinyOLED.cpp - Library for using Display OLED 128x32 0.91 I2C SSD1306 with AtTiny85.
+    TinyOLED.h - Library for using Display OLED 128x32 0.91 I2C SSD1306 with AtTiny85.
     Note that you need to use Spence Konde's ATTiny Core and TinyI2CMaster library for these routines to work.
-    Created by Hernán Rodríguez, March 13, 2021.
-    Released into the public domain.
+    
+    Created by Hernán Rodríguez - hernan.rod.98@gmail.com - March 13, 2021.
+    
+    CC BY 4.0
+    Licensed under a Creative Commons Attribution 4.0 International license: 
+    http://creativecommons.org/licenses/by/4.0/
 */
 
 #include "TinyOLED.h"
