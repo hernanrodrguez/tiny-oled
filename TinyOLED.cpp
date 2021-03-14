@@ -71,6 +71,24 @@ void TinyOLED::printString(const char *str){
         printChar(str[count++]);     
 }
 
+void TinyOLED::printNumber(int num){
+    byte i=0;
+    byte buffer[3] = "";
+    
+    if(num == 0)
+        printChar('0');
+    
+    while(num > 0){
+        buffer[i++] = num%10;
+        num /= 10;
+    }
+
+    while(i > 0){
+        printChar('0'+ buffer[i-1]);
+        i--;
+    }
+}
+
 void TinyOLED::sendCommand(byte cmd){
     TinyI2C.start(OLED_ADDRESS, 0);
     TinyI2C.write(0x80); // cmd mode

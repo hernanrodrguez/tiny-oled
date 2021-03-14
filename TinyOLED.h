@@ -125,6 +125,7 @@ class TinyOLED{
         void setCursorXY(byte X, byte Y);
         void printChar(char c);
         void printString(const char *String);
+        void printNumber(int num);
 
     private:
         void sendCommand(byte cmd);
