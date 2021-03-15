@@ -75,7 +75,10 @@ void TinyOLED::printNumber(int num){
     byte i=0;
     byte buffer[3] = "";
     
-    if(num == 0)
+    if(num == 0){
+        printChar('0');
+        printChar('0');
+    } else if(num < 10)
         printChar('0');
     
     while(num > 0){
